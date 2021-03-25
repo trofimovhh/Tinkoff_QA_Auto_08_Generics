@@ -12,6 +12,7 @@ public class Main {
 
         // Check copyFreshFruitFromBoxToBox()
         Fruit orange = new Fruit();
+//        orange.setFresh(false);
         Box<Fruit> ob1 = new Box<>();
         Box<Fruit> ob2 = new Box<>();
         ob1.put(orange);
@@ -29,6 +30,7 @@ public class Main {
         bBox.put(cBox);
         aBox.put(bBox);
         BoxUtil.printElementFromTwoBoxes(cBox);
+        BoxUtil.printElementFromBoxes(dBox);
         BoxUtil.printElementFromBoxes(aBox);
     }
 }
